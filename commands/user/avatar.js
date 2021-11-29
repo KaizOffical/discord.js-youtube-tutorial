@@ -12,6 +12,6 @@ module.exports = {
             .setDescription(`Avatar của ${member.user.tag}`)
             .setURL(url)
             .setImage(url)
-        message.channel.send(avtEmbed)
+        message.channel.send({ embeds: [avtEmbed]})
     }
 }
