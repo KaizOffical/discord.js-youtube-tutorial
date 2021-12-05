@@ -43,4 +43,9 @@ module.exports = async (client) => {
     client.on("ready", async () => {
         await client.application.commands.set(arrayOfSlashCommands);
     });
+
+    const { mongooseConnectionString } = require('../config.json')
+    if (!mongooseConnectionString) return;
+
+    mongoose.connect(mongooseConnectionString).then(() => console.log('Connected to mongodb'));
 };
