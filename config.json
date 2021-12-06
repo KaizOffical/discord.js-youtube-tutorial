@@ -1,5 +1,5 @@
 {
     "token": "BOT_TOKEN",
     "prefix": "!",
-    "mongooseConnectionString": "mongodb+srv://youtube-tutorial:<password>@discordbot.lntfd.mongodb.net/myFirstDatabase?retryWrites=true&w=majority"
+    "mongooseConnectionString": "MONGO-CONNECT"
 }
